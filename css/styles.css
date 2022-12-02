@@ -102,7 +102,7 @@ nav {
 }
 
 .contact-hover {
-  transition: color var(--animation);
+	transition: color var(--animation);
 }
 
 .contact-hover:hover {
@@ -125,7 +125,7 @@ nav {
 	color: var(--color-title-background);
 	font-weight: 600;
 
-  transition: color var(--animation);
+	transition: color var(--animation);
 }
 
 .link-contacts {
@@ -339,8 +339,6 @@ nav {
 
 .footer-data {
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .footer-list {
@@ -572,7 +570,7 @@ nav {
 }
 
 .svg-partner {
-	fill: #8E8F99;
+	fill: #8e8f99;
 	transition: fill var(--animation);
 }
 
@@ -585,7 +583,6 @@ nav {
 .a-partner:focus .svg-partner {
 	fill: var(--color-studio);
 }
-
 
 .customers {
 	padding-top: 120px;
@@ -646,7 +643,6 @@ nav {
 	height: 4px;
 	border-radius: 2px;
 	background-color: var(--color-studio);
-
 }
 
 .active-page-portfolio {
@@ -671,14 +667,14 @@ nav {
 
 .active-page-studio::after {
 	content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	display: block;
 	width: 48px;
 	height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-studio);
+	border-radius: 2px;
+	background-color: var(--color-studio);
 }
 /* ============ACTIVE PAGE STUDIO============ */
 /* ============MODAL WINDOW============ */
@@ -688,15 +684,14 @@ nav {
 	left: 0;
 	display: flex;
 
-	width: 100%;;
+	width: 100%;
 	height: 100%;
 	background: rgba(46, 47, 66, 0.4);
 
 	transition: visibility var(--animation), opacity var(--animation);
-
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
 	visibility: 0;
 	opacity: 0;
 	pointer-events: none;
@@ -707,21 +702,20 @@ nav {
 .modal {
 	width: 408px;
 	height: 576px;
-	background-color: #FCFCFC;
+	padding: 72px 24px 24px 24px;
+	background-color: #fcfcfc;
 
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	
-
 }
 
 .close-button {
 	position: absolute;
 	right: 24px;
 	top: 24px;
-	
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -729,16 +723,131 @@ nav {
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background-color: #E7E9FC;
+	background-color: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	 
 }
 
 .close-button:hover,
 .close-button:focus {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-	
 }
 
 /* ============MODAL WINDOW============ */
+
+/* ============ FOOTER FORM ============ */
+.form-element {
+	display: flex;
+	height: 80px;
+	margin-left: 80px;
+}
+
+.button-form {
+	display: flex;
+	color: #ffffff;
+	width: 168px;
+	height: 40px;
+	padding: 8px 24px;
+	border-radius: 4px;
+	background-color: var(--color-studio);
+	justify-content: center;
+	align-items: center;
+}
+
+.button-form::after {
+	content: "";
+	background-image: url(../images/icon-send.svg);
+	width: 20px;
+	height: 20px;
+	margin-left: 16px;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.email-input-box {
+	width: 264px;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: inherit;
+	padding: 8px 16px;
+	color: #fff;
+}
+
+.email-input-box:playsholder {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.text-before-form-email {
+	display: block;
+	margin-bottom: 16px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5;
+
+	letter-spacing: 0.02em;
+}
+
+.button-bottom {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 24px;
+}
+/* ============ FOOTER FORM ============ */
+
+/* ============ MODAL FORM ============ */
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-field {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding-left: 34px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.text-policy {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+
+	color: #757575;
+}
+
+.style-modal-button {
+	display: flex;
+	justify-content: center;
+}
+
+.button-modal-form {
+	width: 170px;
+	height: 51px;
+	background-color: var(--color-studio);
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.04em;
+}
+/* ============ MODAL FORM ============ */
