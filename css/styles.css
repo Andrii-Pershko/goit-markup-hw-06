@@ -923,6 +923,8 @@ nav {
 }
 
 .modal-form-check-desk {
+	margin-bottom: 24px;
+
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.33;
@@ -943,7 +945,6 @@ nav {
 	border-radius: 2px;
 	cursor: pointer;
 	margin-right: 8px;
-	margin-bottom: 24px;
 	transition: background-color var(--animation), background-image var(--animation), border var(--animation);
 }
 
@@ -972,6 +973,17 @@ nav {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	align-self: center;
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+	background: #4d5ae5;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-form-submit:active {
+	background-color: #404bbf;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
