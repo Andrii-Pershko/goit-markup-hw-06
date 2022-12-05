@@ -910,6 +910,12 @@ nav {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+
+	letter-spacing: 0.01em;
+
 	transition: border-color var(--animation);
 }
 
@@ -920,6 +926,11 @@ nav {
 
 .modal-coment-field::placeholder {
 	color: rgba(117, 117, 117, 0.5);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16;
+
+	letter-spacing: 0.01em;
 }
 
 .modal-form-check-desk {
@@ -983,7 +994,7 @@ nav {
 }
 
 .modal-form-submit:active {
-	background-color: #404BBF;
+	background-color: #404bbf;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
